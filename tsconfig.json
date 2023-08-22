@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "allowJs": false,
+    "target": "ES6",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "types": ["node", "jest", "@testing-library/jest-dom"],
+    "strictNullChecks": true,
+    "paths": {
+      "*": ["node_modules/*"],
+      "@src/*": ["./src/*"],
+      "@components/*": ["./src/ts/components/*"],
+      "@pages/*": ["./src/ts/pages/*"],
+      "@utils/*": ["./src/ts/utils/*"]
+      //"@test/*": ["./test/*"],
+    }
+  },
+  "include": ["src/ts/**/*"]
+}
